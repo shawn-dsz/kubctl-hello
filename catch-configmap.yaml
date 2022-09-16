@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: catch-configmap
+  namespace: default
+data:
+  TZ: UTC
+  APP_MAX_SESSION: '5'
+  APP_NEW_SESSION_WAIT_TIMEOUT: '-1'
+  APP_THROW_ON_CAPABILITY_NOT_PRESENT: 'true'
+  APP_JETTY_MAX_THREADS: '-1'
+  APP_CLEAN_UP_CYCLE: '5000'
+  APP_BROWSER_TIMEOUT: '0'
+  APP_TIMEOUT: '30'
+  APP_DEBUG: 'false'
+  APP_HUB_PORT: '4444'
+  HOME: /home/post-user
